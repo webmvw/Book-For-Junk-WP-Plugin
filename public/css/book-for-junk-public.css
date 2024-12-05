@@ -1,0 +1,93 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+ .mts_book_for_junk_container {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* -------  radio button style -------- */
+ .custom-radio input{
+    display: none;
+  }
+  .radio-btn{
+    border: 1px solid #E5E7EB;
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    margin: 15px;
+    box-shadow: 0 0 10px #c3c3c329;
+    position: relative;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 8px !important;
+    line-height: 32px;
+  }
+  .radio-btn:hover{cursor: pointer;background-color: #7631f814}
+  .custom-radio input:checked+.radio-btn{
+    border: 1px solid #5F14E1;
+    color:#5F14E1;
+    background-color: #7631f814;
+  }
+
+
+
+
+.mts_skip_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mts_single_skip{
+    width: 260px;
+}
+
+
+
+#mts_post_code_submition_form{
+    display: flex;
+}
+
+#mts_post_code_submition_form #mts_post_code{
+    border:none;
+}
+
+#mts_book_now_button{
+    width: 180px;
+    margin-top: 0px;
+    line-height: 28px;
+    font-size: 16px;
+    background: #5C10ED;
+    color: #ffff;
+    border-radius: 6px;
+}
