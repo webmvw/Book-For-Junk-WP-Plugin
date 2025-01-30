@@ -17,8 +17,19 @@
 
 <div class="mts_book_for_junk_container">
 	<form id="mts_post_code_submition_form">
-		<input type="text" name="mts_post_code" id="mts_post_code" placeholder="Enter Your PostCode">
-		<button type="submit" id="mts_book_now_button">Book Now</button>
+		<!-- <input type="text" name="mts_post_code" id="mts_post_code" placeholder="Enter Your PostCode">
+		<button type="submit" id="mts_book_now_button">Book Now</button> -->
+        <?php
+        printf(
+            '<input type="text" name="mts_post_code" id="mts_post_code" placeholder="%1$s">',
+            esc_html__( 'Enter Your PostCode', 'book-for-junk' )
+        );
+
+        printf(
+            '<button type="submit" id="mts_book_now_button">%1$s</button>',
+            esc_html__( 'Book Now', 'book-for-junk' )
+        );
+        ?>
 	</form>
 	<div id="mts_postcode_output" style="color:red;"></div>
 </div>
